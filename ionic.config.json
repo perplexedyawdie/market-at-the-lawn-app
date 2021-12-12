@@ -1,0 +1,7 @@
+{
+  "name": "Market At The Lawn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
