@@ -1,5 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import BoothCard from '../components/BoothCard';
+import BoothMap from '../components/BoothMap';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
@@ -7,16 +8,22 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle className="ion-text-center" >Market at the Lawn Booths</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <IonGrid>
+            <IonRow>
+              <IonCol size='12'>
+                <BoothMap />
+              </IonCol>
+            </IonRow>
+            <IonRow>
+              <IonCol size='12'>
+                <BoothCard />
+              </IonCol>
+            </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
