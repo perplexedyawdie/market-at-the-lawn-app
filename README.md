@@ -4,6 +4,7 @@
 Proof of concept for a venue map app. The idea is to make it easy for patrons to locate & relocate the different booths and get access to their contact details/social media accounts.
 
 ## Demo
+https://user-images.githubusercontent.com/33191770/145751334-7cd29164-811e-45cf-b7fb-8e0fa56e5c7c.mp4
 
 ## Features
 
